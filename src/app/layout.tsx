@@ -12,7 +12,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "LLocal",
-  description: "",
+  description: "An application to utilize locally hosted LLM's",
 };
 
 export default function RootLayout({
