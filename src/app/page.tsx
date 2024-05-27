@@ -3,7 +3,7 @@ import Demo from "../../public/llocal-large.png";
 import DemoDeepBlue from "../../public/llocal-deepblue.png";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { BeamButton } from "./beam-button";
+import { BeamButton } from "../components/beam-button";
 import { NavbarItem, NavbarLayout } from "@/components/navbar";
 import { Button } from "@/components/ui/button";
 import { BorderBeam } from "@/components/border-beam";
@@ -12,6 +12,7 @@ import { MagicCard, MagicContainer } from "@/components/magic-card";
 import { Separator } from "@/components/ui/separator";
 import { ContainerScroll } from "@/components/container-scroll-animation";
 import AnimatedShinyText from "@/components/animated-shiny-text";
+import { DownloadDropdown } from "@/components/download-dropdown";
 
 export default function Home() {
   return (
@@ -20,6 +21,9 @@ export default function Home() {
         <ContainerScroll
           titleComponent={
             <div className="text-center flex flex-col justify-center items-center gap-5 md:mb-20">
+              <AnimatedGradientText className="text-xs p-1 md:p-2">
+                ✨ Version 1.0.0-beta.1 is out now! Only availble on Windows.
+              </AnimatedGradientText>
               <div>
                 <h1 className="font-light text-8xl">llocal</h1>
                 <p className="">
@@ -27,16 +31,27 @@ export default function Home() {
                   running large language models
                 </p>
               </div>
-              <BeamButton className="text-2xl p-6">Download</BeamButton>
-              <p className="opacity-75">
-                100k+ Downloads | Free & Open Source
-              </p>
+              <DownloadDropdown>
+                <div className="relative text-2xl font-light p-4 bg-foreground text-background rounded-lg hover:scale-95 hover:opacity-95 transition-all">
+                  <h1>Download</h1>
+                  <BorderBeam borderWidth={2} duration={12} delay={9} colorFrom='#FFE604' colorTo='#FF00A8'/>
+                </div>
+              </DownloadDropdown>
+              {/* <p className="opacity-75">Free & Open Source</p> */}
             </div>
           }
         >
           <div className="flex flex-col gap-2">
-          <Image src={Demo} alt="llocal screenshot" className="object-cover rounded-2xl"/>
-          <Image src={DemoDeepBlue} alt="llocal screenshot" className=" md:hidden object-cover rounded-2xl"/>            
+            <Image
+              src={Demo}
+              alt="llocal screenshot"
+              className="object-cover rounded-2xl"
+            />
+            <Image
+              src={DemoDeepBlue}
+              alt="llocal screenshot"
+              className=" md:hidden object-cover rounded-2xl"
+            />
           </div>
         </ContainerScroll>
 
@@ -61,20 +76,32 @@ export default function Home() {
           <MagicCard className="flex flex-col justify-evenly gap-2">
             <h1 className="">Multiple Models</h1>
             <Separator />
-            <p className="text-sm">{"Out of the box support, for Ollama. So you can use all possible open sourced LLM's like Llama 3, Gemma, Phi3, Mixtral and many more!"}</p>
+            <p className="text-sm">
+              {
+                "Out of the box support, for Ollama. So you can use all possible open sourced LLM's like Llama 3, Gemma, Phi3, Mixtral and many more!"
+              }
+            </p>
           </MagicCard>
           <MagicCard className="flex flex-col  gap-2">
             <p className="">Themes</p>
             <Separator />
-            <p className="text-sm">As of now, there are 5 themes to choose from all supporting both light and dark mode. <br /> <br />  </p>
+            <p className="text-sm">
+              As of now, there are 5 themes to choose from all supporting both
+              light and dark mode. <br /> <br />{" "}
+            </p>
           </MagicCard>
           <MagicCard className="flex flex-col gap-2">
             <p className="">Privacy</p>
             <Separator />
-            <p className="text-sm">All your data is stored llocally, all the models run llocally. (hahaha) <br /> <br /> </p>
+            <p className="text-sm">
+              All your data is stored llocally, all the models run llocally.
+              (hahaha) <br /> <br />{" "}
+            </p>
           </MagicCard>
         </MagicContainer>
-        <AnimatedGradientText className="font-light">Other than this, llocal can do everything expected out of the box!</AnimatedGradientText>
+        <AnimatedGradientText className="font-light">
+          Other than this, llocal can do everything expected out of the box!
+        </AnimatedGradientText>
         <DotPattern
           width={20}
           height={20}

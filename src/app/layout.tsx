@@ -2,12 +2,8 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import Logo from "../../public/llocal.svg";
-import { NavbarItem, NavbarLayout } from "@/components/navbar";
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
-import { FooterLayout } from "@/components/footer";
-import { ModeToggle } from "@/components/dark-mode-toggle";
+import { Footer, FooterLayout } from "@/components/footer";
+import { Navbar } from "@/components/navbar";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -33,31 +29,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <NavbarLayout>
-            <NavbarItem isIcon={true}>
-              <Image
-                src={Logo}
-                alt="LLocal-Logo"
-                className="size-10 dark:invert cursor-pointer"
-              />
-            </NavbarItem>
-            <div className="flex justify-center items-center  gap-5">
-              <NavbarItem isLink>
-                <h1 className="font-light">GitHub</h1>
-              </NavbarItem>
-              <NavbarItem className="opacity-100">
-                <Button className="font-light" variant={"outline"}>
-                  Download
-                </Button>
-              </NavbarItem>
-              <NavbarItem className="opacity-100">
-                <ModeToggle />
-              </NavbarItem>
-            </div>
-          </NavbarLayout>
+        <Navbar />
           {children}
-          <FooterLayout>
-          </FooterLayout>
+        <Footer />
         </ThemeProvider>
       </body>
     </html>
