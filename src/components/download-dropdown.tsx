@@ -20,7 +20,7 @@ export const DownloadDropdown = ({
   const router = useRouter();
   function handleClick() {
     window.location.href =
-      "https://github.com/kartikm7/llocal/releases/download/v1.0.0-beta.1/LLocal-1.0.0-beta.1-setup.exe";
+      "https://github.com/kartikm7/llocal/releases/download/v1.0.0-beta.3/LLocal-1.0.0-beta.3-setup.exe";
     router.push("/guide");
   }
   return (
