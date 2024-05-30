@@ -15,7 +15,7 @@ export default function Philosophy() {
           The process of hosting and running is done by Ollama, which is bundled with LLocal.
           The idea of utilizing <span className="font-semibold">LLocally</span> (haha I feel like the joke is getting old) running LLM&apos;s ensures that your data is with you.
           With <span className="font-semibold">LLocal</span> and <span className="font-semibold">Ollama</span>, <span className="font-semibold">your data is stored safely in your own machine.</span> Further, making LLocal <span className="font-semibold">open sourced</span> means
-           <span className="font-semibold">anyone and everyone can possibly contribute </span> and if not be able to contribute <span className="font-semibold">at the very least can learn from the project.</span>
+           <span className="font-semibold"> anyone and everyone can possibly contribute </span> and if not be able to contribute <span className="font-semibold">at the very least can learn from the project.</span>
         </p>
         <p>
           That was and is my thought process. <br />
