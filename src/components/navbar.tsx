@@ -77,11 +77,16 @@ export const Navbar = () => {
         </NavbarItem>
       </Link>
       <div className="hidden md:flex justify-center items-center  gap-5">
+        <Link href={"/releaselog"}>
+          <NavbarItem>
+            <h1 className="font-light">Release log</h1>
+          </NavbarItem>
+        </Link>
         <Link href={"/guide"}>
           <NavbarItem>
             <h1 className="font-light">Guide</h1>
           </NavbarItem>
-        </Link>{" "}
+        </Link>
         <Link href={"/philosophy"}>
           <NavbarItem>
             <h1 className="font-light">Philosophy</h1>
@@ -125,6 +130,9 @@ export const Navbar = () => {
             </Link>
             <Link href="/guide">
               <DropdownMenuItem>Guide</DropdownMenuItem>
+            </Link>
+            <Link href="/releaselog">
+              <DropdownMenuItem>Release log</DropdownMenuItem>
             </Link>
             <Link href={`${process.env.NEXT_PUBLIC_DISCORD}`} target="_blank">
               <DropdownMenuItem>
