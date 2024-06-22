@@ -18,6 +18,9 @@ export default function Guide(){
       <li>- You can find out about the supported models via <Link href="https://www.ollama.ai/library" target="_blank">Ollama.ai</Link></li>
       <li>- Voila! You&apos;re all set now!</li>
     </ul>
+    <Separator className="" />
+    <p className="">For more information regarding supported models you can check out: <Link href='https://www.ollama.com/library' target="_blank" className="text-orange-400 hover:underline transition-all">ollama.ai/library</Link> </p>
   </div>
+
 </div>
 }
