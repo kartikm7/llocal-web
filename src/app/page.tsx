@@ -22,7 +22,7 @@ export default function Home() {
           titleComponent={
             <div className="text-center flex flex-col justify-center items-center gap-5 md:mb-20">
               <AnimatedGradientText className="text-xs p-1 md:p-2">
-                ✨ Officially supported by Ollama!
+                ✨ Officially recognized by Ollama!
               </AnimatedGradientText>
               <div>
                 <h1 className="font-light text-8xl">llocal</h1>
