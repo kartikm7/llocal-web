@@ -20,10 +20,13 @@ export const DownloadDropdown = ({
   ...props
 }: ComponentProps<"div">) => {
   const links = [
-    "https://github.com/kartikm7/llocal/releases/download/v1.0.0-beta.4/LLocal-1.0.0-beta.4-setup.exe",
-    "https://github.com/kartikm7/llocal/releases/download/v1.0.0-beta.4/LLocal-1.0.0-beta.4-arm64.dmg",
-    "https://github.com/kartikm7/llocal/releases/download/v1.0.0-beta.4/LLocal-1.0.0-beta.4-x64.dmg",
-    "https://github.com/kartikm7/llocal/releases/download/v1.0.0-beta.4/LLocal-1.0.0-beta.4-mac.zip"
+    "https://github.com/kartikm7/llocal/releases/download/v1.0.0-beta.5/LLocal-1.0.0-beta.5-setup.exe",
+    "https://github.com/kartikm7/llocal/releases/download/v1.0.0-beta.5/LLocal-1.0.0-beta.5-arm64.dmg",
+    "https://github.com/kartikm7/llocal/releases/download/v1.0.0-beta.5/LLocal-1.0.0-beta.5-x64.dmg",
+    "https://github.com/kartikm7/llocal/releases/download/v1.0.0-beta.5/LLocal-1.0.0-beta.5-mac.zip",
+    "https://github.com/kartikm7/llocal/releases/download/v1.0.0-beta.5/LLocal_1.0.0-beta.5_amd64.deb",
+    "https://github.com/kartikm7/llocal/releases/download/v1.0.0-beta.5/LLocal-1.0.0-beta.5.AppImage",
+    "https://github.com/kartikm7/llocal/releases/download/v1.0.0-beta.5/LLocal_1.0.0-beta.5_amd64.snap",
   ];
   const router = useRouter();
   function handleClick(platform: string) {
@@ -42,6 +45,18 @@ export const DownloadDropdown = ({
         break;
       case "mac:uni":
         window.location.href = links[3];
+        router.push("/guide");
+        break;
+      case "linux:deb":
+        window.location.href = links[4];
+        router.push("/guide");
+        break;
+      case "linux:app":
+        window.location.href = links[5];
+        router.push("/guide");
+        break;
+      case "linux:snap":
+        window.location.href = links[6];
         router.push("/guide");
         break;
       default:
@@ -78,8 +93,23 @@ export const DownloadDropdown = ({
         >
           <TbWorld /> Mac (Universal supports both arm & intel)
         </DropdownMenuItem>
-        <DropdownMenuItem className="flex gap-2" disabled>
-          <FaLinux /> Linux
+        <DropdownMenuItem
+          onClick={() => handleClick("linux:deb")}
+          className="flex gap-2"
+        >
+          <FaLinux /> Linux (Debian)
+        </DropdownMenuItem>
+        <DropdownMenuItem
+          onClick={() => handleClick("linux:app")}
+          className="flex gap-2"
+        >
+          <FaLinux /> Linux (App Image)
+        </DropdownMenuItem>
+        <DropdownMenuItem
+          onClick={() => handleClick("linux:snap")}
+          className="flex gap-2"
+        >
+          <FaLinux /> Linux (Snap)
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
