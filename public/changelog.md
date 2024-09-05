@@ -1,3 +1,23 @@
+## 1.0.0-beta.6 ( Major Release )
+> 5th September, 2024
+## ✨ Knowledge Base is here with File Upload Support!
+- With the power of VectorDB's, LLocal now utilizes a persistent way to store vector embeddings. (Although only applicable to File Uploads at the moment).
+- pdf, docx, pptx, csv and txt files are supported for file upload.
+
+## 🌊 What's Changed
+- Delete chat is now here. #5 
+- Fixed the overflow during code generation. #4 
+- The more button (+) near the text input, has an added file upload section.
+- Settings has been revamped now with two sections, Settings (General) and Knowledge Base.
+- You can delete the saved VectorDB's through the knowledge base section in settings.
+- There's also an auto-complete pop-up for easy navigation through existing VectorDB's by using a / forward slash at the beginning of your prompt.
+
+## ❄️ Knowledge Base (More information)
+- The knowledge base uses a basic similarity search at the moment, which retrieves relevant chunks quickly unlike agentic solutions. Although the results are still not up-to the mark.
+- Further, on every RAG based prompt the response also has a sources table attached to show where the retrieved chunks are in the actual file.
+
+**Full Changelog**: https://github.com/kartikm7/llocal/compare/v1.0.0-beta.5...v1.0.0-beta.6
+
 ## 1.0.0-beta.5 ( Major Release )
 > 25th June, 2024
 ## ✨ Web Search, Image Upload & Linux Support is here!
