@@ -87,12 +87,12 @@ export const DownloadDropdown = ({
         >
           <SiIntel /> Mac (Intel)
         </DropdownMenuItem>
-        <DropdownMenuItem
+        {/* <DropdownMenuItem
           onClick={() => handleClick("mac:uni")}
           className="flex gap-2"
         >
           <TbWorld /> Mac (Universal supports both arm & intel)
-        </DropdownMenuItem>
+        </DropdownMenuItem> */}
         <DropdownMenuItem
           onClick={() => handleClick("linux:deb")}
           className="flex gap-2"
