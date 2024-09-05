@@ -13,6 +13,7 @@ import { Separator } from "@/components/ui/separator";
 import { ContainerScroll } from "@/components/container-scroll-animation";
 import AnimatedShinyText from "@/components/animated-shiny-text";
 import { DownloadDropdown } from "@/components/download-dropdown";
+import { Cursor } from "@/components/cursor";
 
 export default function Home() {
   return (
@@ -25,7 +26,29 @@ export default function Home() {
                 ✨ Officially recognized by Ollama!
               </AnimatedGradientText>
               <div>
-                <h1 className="font-light text-8xl">llocal</h1>
+                <div>
+                  <Cursor
+                    attachToParent
+                    variants={{
+                      initial: { height: 0, opacity: 0, scale: 0.3 },
+                      animate: { height: "auto", opacity: 1, scale: 1 },
+                      exit: { height: 0, opacity: 0, scale: 0.3 },
+                    }}
+                    transition={{
+                      type: "spring",
+                      duration: 0.3,
+                      bounce: 0.1,
+                    }}
+                    className="overflow-hidden"
+                    springConfig={{
+                      bounce: 0.01,
+                    }}
+                  >
+                  <p className="text-xs backdrop-blur-lg p-2 rounded-full border-2 border-white border-opacity-50"><span className="font-semibold">Double L</span> for the <span className="font-semibold">LL in LLM</span>, <span className="italic">but could not fit in the M</span></p>
+                  </Cursor>
+                  <h1 className="font-light text-8xl">llocal</h1>
+                  
+                  </div>
                 <p className="">
                   a fully open sourced client for utilizing <br /> locally
                   running large language models
@@ -34,7 +57,13 @@ export default function Home() {
               <DownloadDropdown>
                 <div className="relative text-2xl font-light p-4 bg-foreground text-background rounded-lg hover:scale-95 hover:opacity-95 transition-all">
                   <h1>Download</h1>
-                  <BorderBeam borderWidth={2} duration={12} delay={9} colorFrom='#FFE604' colorTo='#FF00A8'/>
+                  <BorderBeam
+                    borderWidth={2}
+                    duration={12}
+                    delay={9}
+                    colorFrom="#FFE604"
+                    colorTo="#FF00A8"
+                  />
                 </div>
               </DownloadDropdown>
               {/* <p className="opacity-75">Free & Open Source</p> */}
@@ -66,23 +95,46 @@ export default function Home() {
           )}
         />
       </div>
-      <div className="features relative p-5 w-full h-screen flex flex-col justify-evenly items-center">
+      <div className="features relative p-5 w-full flex flex-col justify-evenly items-center gap-5">
         <h1 className="text-7xl justify-self-start">Features</h1>
         <MagicContainer
           className={
-            "flex h-[500px] justify-self-center text-light text-2xl w-5/6 flex-col gap-4 lg:h-[250px] lg:flex-row"
+            "grid grid-cols-1 md:grid-cols-3 w-5/6 gap-5 justify-items-center items-center text-light text-2xl"
           }
         >
-          <MagicCard className="flex flex-col justify-evenly gap-2">
+          <MagicCard className="flex flex-col h-[250px] gap-2">
+            <h1 className="">Chat with Files</h1>
+            <Separator />
+            <p className="text-sm">
+              {"Seamlessly interact with PDF, PPTX, DOCX, CSV, and TXT files."}
+            </p>
+          </MagicCard>
+          <MagicCard className="flex flex-col h-[250px] gap-2">
+            <p className="">Web Search</p>
+            <Separator />
+            <p className="text-sm">
+              You can not only perform a DuckDuckGo search but also make the LLM
+              read content from a link.
+            </p>
+          </MagicCard>
+          <MagicCard className="flex flex-col h-[250px] gap-2">
+            <p className="">Images</p>
+            <Separator />
+            <p className="text-sm">
+              Vision models are also supported so you can upload your images and
+              chat with them!
+            </p>
+          </MagicCard>
+          <MagicCard className="flex flex-col h-[250px] justify-evenly gap-2">
             <h1 className="">Multiple Models</h1>
             <Separator />
             <p className="text-sm">
               {
-                "Out of the box support, for Ollama. So you can use all possible open sourced LLM's like Llama 3, Gemma, Phi3, Mixtral and many more!"
+                "Out of the box support, for Ollama. So you can use all possible open sourced LLM's like Llama, Gemma, Phi, Mistral and many more!"
               }
             </p>
           </MagicCard>
-          <MagicCard className="flex flex-col  gap-2">
+          <MagicCard className="flex flex-col h-[250px]  gap-2">
             <p className="">Themes</p>
             <Separator />
             <p className="text-sm">
@@ -90,7 +142,7 @@ export default function Home() {
               light and dark mode. <br /> <br />{" "}
             </p>
           </MagicCard>
-          <MagicCard className="flex flex-col gap-2">
+          <MagicCard className="flex flex-col h-[250px] gap-2">
             <p className="">Privacy</p>
             <Separator />
             <p className="text-sm">
