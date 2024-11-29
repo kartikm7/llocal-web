@@ -1,3 +1,21 @@
+## 1.0.0-beta.7 ( Major Release )
+> 28th November, 2024
+## ✨ Multiple File Support and Prompt Suggestions are here!
+- LLocal can now perform semantic search across multiple PDF's which are reranked using the BM25.
+- After every AI response now there are AI generated prompt suggestions!
+
+## 🌊 What's Changed
+- Fixed the overflow during code generation. (This time for good) #4 
+- Changed the location for the stop generating button. It gets swapped with the send button.
+- Tooltip over the knowledge base context.
+- An attempt to solve the issue #12 . (By enabling rebuild of native modules in the build script) 
+
+## Major Thanks to the Contributors!
+* Multi-pdf Capabilities by @dandonarahul2002 in https://github.com/kartikm7/llocal/pull/13
+
+
+**Full Changelog**: https://github.com/kartikm7/llocal/compare/v1.0.0-beta.6...v1.0.0-beta.7
+
 ## 1.0.0-beta.6 ( Major Release )
 > 5th September, 2024
 ## ✨ Knowledge Base is here with File Upload Support!

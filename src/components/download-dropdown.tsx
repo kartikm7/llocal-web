@@ -20,13 +20,13 @@ export const DownloadDropdown = ({
   ...props
 }: ComponentProps<"div">) => {
   const links = [
-    "https://github.com/kartikm7/llocal/releases/download/v1.0.0-beta.6/LLocal-1.0.0-beta.6-setup.exe",
-    "https://github.com/kartikm7/llocal/releases/download/v1.0.0-beta.6/LLocal-1.0.0-beta.6-arm64.dmg",
-    "https://github.com/kartikm7/llocal/releases/download/v1.0.0-beta.6/LLocal-1.0.0-beta.6-x64.dmg",
-    "https://github.com/kartikm7/llocal/releases/download/v1.0.0-beta.6/LLocal-1.0.0-beta.6-mac.zip",
-    "https://github.com/kartikm7/llocal/releases/download/v1.0.0-beta.6/LLocal_1.0.0-beta.6_amd64.deb",
-    "https://github.com/kartikm7/llocal/releases/download/v1.0.0-beta.6/LLocal-1.0.0-beta.6.AppImage",
-    "https://github.com/kartikm7/llocal/releases/download/v1.0.0-beta.6/LLocal_1.0.0-beta.6_amd64.snap",
+    "https://github.com/kartikm7/llocal/releases/download/v1.0.0-beta.7/LLocal-1.0.0-beta.7-setup.exe",
+    "https://github.com/kartikm7/llocal/releases/download/v1.0.0-beta.7/LLocal-1.0.0-beta.7-arm64.dmg",
+    "https://github.com/kartikm7/llocal/releases/download/v1.0.0-beta.7/LLocal-1.0.0-beta.7-x64.dmg",
+    "https://github.com/kartikm7/llocal/releases/download/v1.0.0-beta.7/LLocal-1.0.0-beta.7-mac.zip",
+    "https://github.com/kartikm7/llocal/releases/download/v1.0.0-beta.7/LLocal_1.0.0-beta.7_amd64.deb",
+    "https://github.com/kartikm7/llocal/releases/download/v1.0.0-beta.7/LLocal-1.0.0-beta.7.AppImage",
+    "https://github.com/kartikm7/llocal/releases/download/v1.0.0-beta.7/LLocal_1.0.0-beta.7_amd64.snap",
   ];
   const router = useRouter();
   function handleClick(platform: string) {
