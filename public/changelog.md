@@ -1,3 +1,18 @@
+## 1.0.0-beta.8 ( Major Release )
+> 27th January, 2025
+## ✨ LLocal Artifacts and Transparency Mode!
+- LLocal Artifacts are runnable aspects within the LLocal environment.
+- LLocal now supports the mermaid code live preview right in the chat, this is the first LLocal artifact.
+- Transparency mode is now also available. (Does not work as expected for Linux yet and even windows does have some edge cases, so it is a little unstable at the moment)
+
+## 🌊 What's Changed
+- Transparency mode provides a blurred backdrop effect to LLocal and also on windows LLocal now has a custom title-bar.
+- Transparency mode can be activated from the settings through the checkbox and for it to be actually visible the background has to be set to `None`.
+-  Fixed issue #14 .
+- Mermaid code preview is supported for Mermaid `11.4.1` syntax.
+
+**Full Changelog**: https://github.com/kartikm7/llocal/compare/v1.0.0-beta.7...v1.0.0-beta.8
+
 ## 1.0.0-beta.7 ( Major Release )
 > 28th November, 2024
 ## ✨ Multiple File Support and Prompt Suggestions are here!
