@@ -1,3 +1,15 @@
+## Minor Release
+> 17th March, 2025
+## ✨ LLocal now supports the **<think></think>** block!
+- Added support for the **think** block, for both while streaming and when added to db.
+- Model pulls/downloads are now cancellable.
+
+## 🌊 What's Changed
+- Optimized re-renders, by isolating components.
+- Model's can be directly pulled from the breadcrumbs in settings.
+
+**Full Changelog**: https://github.com/kartikm7/llocal/compare/v1.0.0-beta.8...v1.0.0-beta.9
+
 ## 1.0.0-beta.8 ( Major Release )
 > 27th January, 2025
 ## ✨ LLocal Artifacts and Transparency Mode!
