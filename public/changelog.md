@@ -1,3 +1,27 @@
+## Major Release
+> 30th May, 2025
+
+26th May 2025 marked the 1 year anniversary for LLocal. So I'm really glad and happy to be able to still maintain LLocal. 
+Thank you for using LLocal and being a part of this community, looking forward to more such releases.
+## ✨ LLocal now supports internationalization! 
+- Internationalization was implemented using `i18next` (#15)
+- Web-search is back and running!
+- Added several performance and user-experience enhancing fixes
+## 🌊 What's Changed
+- For web-search shifted providers to `google-sr` instead of `ddg`
+- No more puppeteer errors, since it uses a new Electron BrowserWindow itself we do not need the overhead of downloading chromium again! (this is so damn cool)
+- Fixed the code overflowing, this is fixed for good now. #4 
+- Optimized the rendering of code blocks, this is massive since this caused significant performance issues
+- Enhanced mode theming by providing a System option alongside Dark and Light themes
+- Fixed the broken chat layout, updated the styles to not break on the change in message width
+- Added a new UI layout for sources in the web-search response
+- Fixed the loading skeleton, during image and web-search response
+- Updated the More-button in the input, it's accessible now via keyboard since we shifted to `radix-primitives` for the More-button
+- Fixed infinite re-rendering in the Knowledge-Base section of settings
+- Added a fade-in and fade-out animation to the More-button
+
+**Full Changelog**: https://github.com/kartikm7/llocal/compare/v1.0.0-beta.9...v1.0.0-beta.10
+
 ## Minor Release
 > 17th March, 2025
 ## ✨ LLocal now supports the **<think></think>** block!

@@ -44,11 +44,11 @@ export default function Home() {
                       bounce: 0.01,
                     }}
                   >
-                  <p className="text-xs backdrop-blur-lg p-2 rounded-full border-2 border-white border-opacity-50"><span className="font-semibold">Double L</span> for the <span className="font-semibold">LL in LLM</span>, <span className="italic">but could not fit in the M</span></p>
+                    <p className="text-xs backdrop-blur-lg p-2 rounded-full border-2 border-white border-opacity-50"><span className="font-semibold">Double L</span> for the <span className="font-semibold">LL in LLM</span>, <span className="italic">but could not fit in the M</span></p>
                   </Cursor>
                   <h1 className="font-light text-8xl">llocal</h1>
-                  
-                  </div>
+
+                </div>
                 <p className="">
                   a fully open sourced client for utilizing <br /> locally
                   running large language models
