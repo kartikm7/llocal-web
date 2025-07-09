@@ -201,13 +201,14 @@ const MagicCard: React.FC<MagicCardProps> = ({
         "bg-gray-300 dark:bg-gray-700",
         "bg-[radial-gradient(var(--mask-size)_circle_at_var(--mouse-x)_var(--mouse-y),var(--border-color),transparent_100%)]",
         className,
-        'flex w-full cursor-pointer flex-col items-center justify-center overflow-hidden bg-[radial-gradient(var(--mask-size)_circle_at_var(--mouse-x)_var(--mouse-y),#ffaa40_0,#9c40ff_50%,transparent_100%)] shadow-2xl'
+        // 'flex w-full cursor-pointer flex-col items-center justify-center overflow-hidden bg-[radial-gradient(var(--mask-size)_circle_at_var(--mouse-x)_var(--mouse-y),#3D56C0_0,#0057FF_20%,transparent_100%)] shadow-2xl'
+        'flex w-full cursor-pointer flex-col items-center justify-center overflow-hidden bg-[radial-gradient(var(--mask-size)_circle_at_var(--mouse-x)_var(--mouse-y),#3D56C080_0,#0057FF80_20%,transparent_100%)] shadow-2xl'
       )}
       {...props}
     >
       {children}
       <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.3),rgba(255,255,255,0))]" />
-      
+
       {/* Background */}
       <div
         className={
