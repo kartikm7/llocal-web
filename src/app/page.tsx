@@ -19,7 +19,7 @@ export default function Home() {
               <span className="font-poppins text-sm md:text-base">✨ Recognized by Ollama</span>
             </AnimatedShinyText>
           </div>
-          <h1 id="main-text" className="font-libre text-center motion-preset-focus motion-duration-2000 motion-ease-in-out lg:text-left text-4xl md:text-6xl"><span className="italic">Seamless, private</span> and <span className="italic">powerful</span><br />chatting experience</h1>
+          <h1 id="main-text" className="font-libre text-center motion-preset-focus motion-duration-2000 motion-ease-in-out lg:text-left text-4xl md:text-7xl"><span className="italic">Seamless, private</span> and <span className="italic">powerful</span><br />chatting experience</h1>
           <DownloadDropdown>
             <h1 className="motion-preset-slide-up-lg motion-delay-1000 rounded-lg p-4 px-8 w-full bg-foreground text-background text-2xl md:text-4xl">
               Download
@@ -28,9 +28,9 @@ export default function Home() {
           <h2 className="font-poppins motion-preset-slide-up-lg motion-delay-1500 text-sm">7.5k+ Downloads | Free & Open sourced</h2>
         </div>
         <div className="h-full w-full relative mt-16">
-          <Image src="/llocal-deepblue.png" alt="a screenshot of the llocal software with it's deepblue background" height={800} width={1000} className="rounded-2xl mx-auto motion-preset-focus motion-delay-1500 motion-duration-2000 motion-ease-in-out" quality={100} />
+          <Image src="/llocal-deepblue.png" alt="a screenshot of the llocal software with it's deepblue background" height={800} width={1200} className="rounded-2xl mx-auto motion-preset-focus motion-delay-1500 motion-duration-2000 motion-ease-in-out" quality={100} />
           <div className="hidden dark:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-10
-                  h-full w-full max-w-[1000px] opacity-60 blur-[600px] scale-y-105 scale-x-105
+                  h-full w-full max-w-[1200px] opacity-60 blur-[600px] scale-y-105 scale-x-105
                   bg-[conic-gradient(at_top_left,_#3D56C0,_#0057FF)]">
           </div>
         </div>

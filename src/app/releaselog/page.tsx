@@ -7,14 +7,15 @@ export default function Changelog() {
   return (
     <div className="w-full py-24 md:py-48 flex flex-col gap-5 justify-start items-center">
       <div className="w-3/5 text-xs lg:text-base space-y-2 md:space-y-5">
-        <h1 className="text-2xl md:text-7xl">Release log</h1>
+        <h1 className="text-2xl md:text-7xl font-libre">Release log</h1>
         <Separator />
         <div className="markdown-body overflow-scroll h-[50%] !bg-transparent">
           <Markdown
             remarkPlugins={[remarkGfm]}
+            className="text-foreground"
             components={{
               a: (props) => (
-                <a href={props.href} className="!text-orange-400 opacity-90 hover:opacity-100 transition-all">
+                <a href={props.href} className="!text-blue-400 opacity-90 hover:opacity-100 transition-all">
                   {props.children}
                 </a>
               ),
