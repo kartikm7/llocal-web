@@ -2,14 +2,14 @@ import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 
 export default function Guide() {
-  return <div className="w-full h-screen flex flex-col gap-5 justify-center items-center">
-    <div className="w-3/5 text-xs lg:text-base space-y-2 md:space-y-5">
+  return <div className="w-full h-full p-16 flex flex-col gap-5 justify-center items-center">
+    <div className="w-3/5 text-xs lg:text-base space-y-2 md:space-y-5 mt-16">
       <div className="space-y-2">
-        <h1 className="text-xs md:text-5xl lg:text-7xl font-libre">Guide</h1>
+        <h1 className="text-2xl md:text-5xl lg:text-7xl font-libre">Guide</h1>
         <p className="hidden md:block text-blue-400">Do read, if you&apos;re not well versed with LLM&apos;s. (not that tough, but important.)</p>
       </div>
       <Separator className="" />
-      <ul className="space-y-2 overflow-scroll ">
+      <ul className="space-y-2">
         <li>- Download and Install LLocal.</li>
         <li>- If you&apos;ve not installed Ollama, let LLocal guide you on that. Follow each step prompted, and LLocal will download the installer for you. This would take about 2 minutes.</li>
         <li>- Now that, LLocal and Ollama are both setup you can, start downloading models. This can be done through the <span className="text-blue-400">Pull a model section in settings</span>, which can be accessed through the command centre of the sidebar.</li>
