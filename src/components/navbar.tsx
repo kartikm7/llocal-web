@@ -32,8 +32,7 @@ export const NavbarItem = ({
   return (
     <div
       className={twMerge(
-        `${
-          isIcon ? "opacity-100" : "opacity-75 hover:scale-95"
+        `${isIcon ? "opacity-100" : "opacity-75 hover:scale-95"
         } flex justify-center items-center gap-2 cursor-pointer hover:opacity-100 transition-all`,
         className
       )}
@@ -65,7 +64,7 @@ export const NavbarLayout = ({
 
 export const Navbar = () => {
   return (
-    <NavbarLayout>
+    <NavbarLayout className="font-poppins">
       <Link href={"/"}>
         <NavbarItem isIcon={true} className="flex gap-3 justify-center">
           <Image

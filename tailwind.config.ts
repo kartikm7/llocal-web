@@ -94,8 +94,12 @@ const config = {
         shimmer: "shimmer 8s infinite",
       },
     },
+    fontFamily: {
+      poppins: ["var(--font-poppins)"],
+      libre: ["var(--font-libre)"]
+    }
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("tailwindcss-motion")],
 } satisfies Config
 
 export default config

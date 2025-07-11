@@ -33,31 +33,31 @@ export const DownloadDropdown = ({
     switch (platform) {
       case "win":
         window.location.href = links[0];
-        router.push("/guide");
+        router.push("/thankyou");
         break;
       case "mac:arm":
         window.location.href = links[1];
-        router.push("/guide");
+        router.push("/thankyou");
         break;
       case "mac:intel":
         window.location.href = links[2];
-        router.push("/guide");
+        router.push("/thankyou");
         break;
       case "mac:uni":
         window.location.href = links[3];
-        router.push("/guide");
+        router.push("/thankyou");
         break;
       case "linux:deb":
         window.location.href = links[4];
-        router.push("/guide");
+        router.push("/thankyou");
         break;
       case "linux:app":
         window.location.href = links[5];
-        router.push("/guide");
+        router.push("/thankyou");
         break;
       case "linux:snap":
         window.location.href = links[6];
-        router.push("/guide");
+        router.push("/thankyou");
         break;
       default:
         break;
