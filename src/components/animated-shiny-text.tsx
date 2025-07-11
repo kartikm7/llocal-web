@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
-import { CSSProperties, FC, ReactNode } from "react";
+import { CSSProperties, ComponentProps, FC, ReactNode } from "react";
 
-interface AnimatedShinyTextProps {
+interface AnimatedShinyTextProps extends ComponentProps<'p'> {
   children: ReactNode;
   className?: string;
   shimmerWidth?: number;
@@ -11,6 +11,7 @@ const AnimatedShinyText: FC<AnimatedShinyTextProps> = ({
   children,
   className,
   shimmerWidth = 100,
+  ...props
 }) => {
   return (
     <p
@@ -30,6 +31,7 @@ const AnimatedShinyText: FC<AnimatedShinyTextProps> = ({
 
         className,
       )}
+      {...props}
     >
       {children}
     </p>
