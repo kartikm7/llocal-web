@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useTheme } from "next-themes";
 import React, { useEffect, useRef } from "react";
 interface AnimatedGradientBackgroundProps {
   /** 
@@ -90,8 +91,9 @@ const AnimatedGradientBackground: React.FC<AnimatedGradientBackgroundProps> = ({
   topOffset = 0,
   containerClassName = "",
 }) => {
+  const { theme, setTheme } = useTheme()
 
-
+  if (theme == "light") gradientColors[0] = "#FFFFFF"
 
   // Validation: Ensure gradientStops and gradientColors lengths match
   if (gradientColors.length !== gradientStops.length) {
